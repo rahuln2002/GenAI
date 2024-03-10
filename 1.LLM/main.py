@@ -26,5 +26,5 @@ user_number = st.number_input("Number of tweets", min_value = 1, max_value = 10,
 if st.button("Generate"):
     tweets = tweet_generator.run(number = user_number, topic = user_topic)
     st.write(tweets)
-    for tweet in tweets:
-        st.write(tweet)
+    # for tweet in tweets:
+    #     st.write(tweet)
