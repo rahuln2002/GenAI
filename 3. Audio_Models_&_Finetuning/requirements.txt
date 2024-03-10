@@ -1,0 +1,4 @@
+elevenlabs
+langchain
+langchain-openai
+langchain-together

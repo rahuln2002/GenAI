@@ -1,0 +1,7 @@
+embedchain
+langchain
+langchain-openai
+langchain-google-genai
+chromadb
+tiktoken
+pypdf
