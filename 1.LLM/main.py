@@ -1,7 +1,8 @@
 import os
 import streamlit as st
 from langchain_openai import ChatOpenAI
-from langchain import LLMChain, PromptTemplate
+from langchain.chains import LLMChain
+from langchain.prompts import PromptTemplate
 
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
