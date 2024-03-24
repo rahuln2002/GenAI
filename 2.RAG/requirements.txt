@@ -5,4 +5,4 @@ langchain-google-genai
 chromadb
 tiktoken
 pypdf
-sqlite3
+db-sqlite3
