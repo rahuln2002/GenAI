@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import os
 import streamlit as st
 from langchain.document_loaders import PyPDFLoader
@@ -33,3 +34,22 @@ question = st.text_input("Ask Question!")
 if st.button("Generate"):
     result = qa_chain({"query": question})
     st.write(result['result'])
+=======
+import os
+import streamlit as st
+from embedchain import App
+
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+
+bot = App()
+bot.add("./Harry_Potter_all_books_preprocessed.txt")
+
+st.title("Harry Potter 🔮")
+st.subheader("Ask about Harry Potter Series")
+
+question = st.text_input("Ask Question!")
+
+if st.button("Generate"):
+    result = bot.query(question)
+    st.write(result)
+>>>>>>> 9be837fafbbf090c9226c42587429787851f2887

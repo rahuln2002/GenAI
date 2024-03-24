@@ -1,7 +1,8 @@
 import os
 import streamlit as st
 from langchain_openai import ChatOpenAI
-from langchain import LLMChain, PromptTemplate
+from langchain.chains import LLMChain
+from langchain.prompts import PromptTemplate
 
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
@@ -26,4 +27,8 @@ if st.button("Generate"):
     tweets = tweet_generator.run(number = user_number, topic = user_topic)
     st.write(tweets)
     # for tweet in tweets:
+<<<<<<< HEAD
     #     st.write(tweet)
+=======
+    #     st.write(tweet)
+>>>>>>> 9be837fafbbf090c9226c42587429787851f2887
