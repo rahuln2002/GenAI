@@ -27,8 +27,5 @@ if st.button("Generate"):
     tweets = tweet_generator.run(number = user_number, topic = user_topic)
     st.write(tweets)
     # for tweet in tweets:
-<<<<<<< HEAD
     #     st.write(tweet)
-=======
     #     st.write(tweet)
->>>>>>> 9be837fafbbf090c9226c42587429787851f2887
